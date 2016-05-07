@@ -1,0 +1,4 @@
+antiword:
+  build: .
+  ports:
+    - "8005:8005"
