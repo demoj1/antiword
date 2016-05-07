@@ -11,7 +11,7 @@ Http сервер для конвертации doc файлов в просто
 
 Код для отправки файла:
 ```go
-b, _ := ioutil.ReadFile("/home/dmr/downloads/test.doc")
+b, _ := ioutil.ReadFile("test.doc")
 
 r, _ := http.PostForm(host, url.Values{
 	"data": []string{string(b)},
