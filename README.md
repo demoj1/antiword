@@ -10,8 +10,8 @@ Http сервер для конвертации doc файлов в просто
 Параметр `data` должен содержать файл формата `doc`.
 
 Код для отправки файла:
-```golang
-b, _ := ioutil.ReadFile("/home/dmr/downloads/test.doc")
+```go
+b, _ := ioutil.ReadFile("test.doc")
 
 r, _ := http.PostForm(host, url.Values{
 	"data": []string{string(b)},
